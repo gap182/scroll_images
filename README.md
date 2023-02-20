@@ -12,3 +12,6 @@ In the root folder execute in the terminal:
 For iOS ony
 - cd ios
 - pod install
+
+- flutter devices (you should see the name of the device where you want to run the app)
+- flutter run -d "device_name"
