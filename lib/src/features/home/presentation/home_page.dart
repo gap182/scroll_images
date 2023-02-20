@@ -54,12 +54,6 @@ class HomePage extends ConsumerWidget {
               },
               child: Text(context.l10n.photos),
             ),
-            BigButton(
-              onTap: () {
-                context.pushNamed('posts');
-              },
-              child: Text(context.l10n.posts),
-            ),
           ],
         ),
       ),

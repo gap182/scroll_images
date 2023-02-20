@@ -62,26 +62,6 @@ void main() {
         thumbnailUrl: '2thirdThumb'),
   ];
 
-  final page3Response = [
-    PhotoModel(
-        albumId: 31,
-        id: 31,
-        title: '3one',
-        url: '3oneURL',
-        thumbnailUrl: '3oneThumb'),
-    PhotoModel(
-        albumId: 32,
-        id: 32,
-        title: '3two',
-        url: '3twoURL',
-        thumbnailUrl: '3twoThumb'),
-    PhotoModel(
-        albumId: 33,
-        id: 33,
-        title: '3third',
-        url: '3thirdURL',
-        thumbnailUrl: '3thirdThumb'),
-  ];
   group('load photos', () {
     test('initial values', () async {
       final container = ProviderContainer(overrides: [
