@@ -15,8 +15,8 @@ class PhotosRepositoryImpl implements PhotosRepository {
 
   @override
   Future<List<PhotoModel>> getPhotosByPage(int page) async {
-    final photos =
-        await client.get(Uri.parse('${AppLinks.mainLink}photos?_page=$page'));
+    final photos = await client
+        .get(Uri.parse('${AppLinks.mainLink}photos?_page=$page&_limit=10'));
     final photosModel = <PhotoModel>[];
     final photosDecoded = json.decode(photos.body);
     if (photosDecoded is List) {

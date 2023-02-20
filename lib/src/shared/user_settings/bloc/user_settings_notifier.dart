@@ -15,9 +15,13 @@ class UserSettingsNotifier extends StateNotifier<UserSettingsState> {
         settings: state.settings.copyWith(languageSelected: locale));
 
     if (saveInfo) {
-      final persData = ref.read(persistentDataProvider);
-      persData.writeInfo('settings', 'user-settings', state.toMap());
+      _saveInfo();
     }
+  }
+
+  void _saveInfo() {
+    final persData = ref.read(persistentDataProvider);
+    persData.writeInfo('settings', 'user-settings', state.toMap());
   }
 
   void updateState(UserSettingsState newState) {
