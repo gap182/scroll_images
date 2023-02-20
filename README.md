@@ -8,6 +8,7 @@ In the root folder execute in the terminal:
 
 - flutter clean
 - flutter pub get
+
 For iOS ony
 - cd ios
 - pod install
