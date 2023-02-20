@@ -1,0 +1,13 @@
+{
+    "appTitle": "Bienvenido a Omni Pro",
+    "settings": "Configuraciones",
+    "spanish": "Español",
+    "english": "Inglés",
+    "photos": "Fotos",
+    "posts": "Posts",
+    "album": "Album",
+    "title": "Título",
+    "error": "Error",
+    "errorConnection": "Hay un error en la conexión a internet",
+    "errorUnknown": "Hay un error desconocido, por favor intenta más tarde"
+}
